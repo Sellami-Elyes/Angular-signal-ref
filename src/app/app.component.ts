@@ -28,8 +28,12 @@ export class AppComponent {
 
 
   subsub = " veeeeery noisy";
+  sub = 'my noisy subtitle'
   showWelcome() {
     alert('Welcome !');
     this.wasWelcomed = true;
+
   }
+
+
 }
