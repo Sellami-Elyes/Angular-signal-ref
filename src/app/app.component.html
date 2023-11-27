@@ -1,1 +1,21 @@
 <p> did i just edit the branch name ? </p>
+
+<div *ngIf="!wasWelcomed">
+    <input type="text" placeholder="username" [(ngModel)]="username"/> 
+    <input type="password" placeholder="password"  [(ngModel)]="password"/> 
+    
+    <button (click)="showWelcome()"> just log me in already </button>
+</div>
+
+
+
+<div *ngIf="wasWelcomed">
+    <form [formGroup]="theForm">
+        <input type="text" formControlName="theUser" />
+        <br />
+        <input type="password" formControlName="thePassword" />
+
+        <br />
+        <button type="button" [disabled]="!theForm.valid">Accepter</button>
+    </form>
+</div>
