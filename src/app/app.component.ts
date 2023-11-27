@@ -28,7 +28,7 @@ export class AppComponent {
 
 
   subsub = " veeeeery noisy";
-  sub = 'yohohohohoho'
+  sub = 'ya7beni ya7'
   showWelcome() {
     alert('Welcome !');
     this.wasWelcomed = true;
