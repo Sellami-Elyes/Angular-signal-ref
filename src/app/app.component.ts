@@ -26,13 +26,9 @@ export class AppComponent {
     thePassword: new FormControl('', Validators.required),
   });
 
-
-  subsub = " veeeeery noisy";
-  sub = 'ya7beni ya7'
   showWelcome() {
     alert('Welcome !');
     this.wasWelcomed = true;
-
   }
 
 
